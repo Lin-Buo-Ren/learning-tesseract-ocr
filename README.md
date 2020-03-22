@@ -30,3 +30,9 @@ bbe518f94b9e3852109113507357bfe7e257834d88d2d1ead44178046bcd2181  chi_tra_vert.t
 
 ```
 
+## Source materials
+
+### UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS by 蔡英文(Ing-wen, Tsai)
+
+Publically released full-text PDF, it is encrypted but should be decrypted easily.
+
