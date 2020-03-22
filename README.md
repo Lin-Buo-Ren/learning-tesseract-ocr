@@ -54,3 +54,41 @@ tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.p
 
 [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt](doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt), quite perfect,  not a typo has been found.
 
+## Single full text page OCR (Traditional Chinese with `HanT` script)
+
+### Source material
+
+From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is "這本博士論文..." at page 2, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf -png` command.
+
+The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png](doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png).
+
+### Operation
+
+```shell
+tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' -l HanT
+```
+
+### Result
+
+[Suboptimal](doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.txt), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
+
+## Single full text page OCR (Traditional Chinese with `chi_tra` language)
+
+### Source material
+
+From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is "這本博士論文..." at page 2, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf -png` command.
+
+The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png](doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png).
+
+### Operation
+
+```shell
+tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' -l chi_tra
+```
+
+### Result
+
+[Suboptimal](doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.txt), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
+
+Comparing with the result using `HanT` script this one is slightly better IMO.
+
