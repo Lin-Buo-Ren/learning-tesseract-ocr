@@ -75,6 +75,18 @@ tesseract \
 
 [Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
+### Result with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814)
+
+```shell
+tesseract \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
+    -l HanT \
+    -c preserve_interword_spaces=1
+```
+
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.with_issue2814_workaround.txt>).
+
 ## Single full text page OCR (Traditional Chinese with `chi_tra` language)
 
 ### Source material
@@ -98,7 +110,21 @@ tesseract \
 
 Comparing with the result using `HanT` script this one is slightly better IMO.
 
+### Result with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814)
+
+```shell
+tesseract \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
+    -l chi_tra \
+    -c preserve_interword_spaces=1
+```
+
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.with_issue2814_workaround.txt>).
+
 ## Reference
 
 * [tesseract-ocr/tessdata_best: Best (most accurate) trained LSTM models.](https://github.com/tesseract-ocr/tessdata_best)
 * [tesseract/tesseract.1.asc at tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract/blob/HEAD/doc/tesseract.1.asc#TESSDATADIR)
+* [Chinese recognition was incorrectly segmented by spaces · Issue #2814 · tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract/issues/2814)
+* [4.1.0 white list · Issue #2760 · tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract/issues/2760#issuecomment-560372382)
