@@ -65,7 +65,10 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 ### Operation
 
 ```shell
-tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' -l HanT
+tesseract \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
+    -l HanT
 ```
 
 ### Result
@@ -83,7 +86,10 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 ### Operation
 
 ```shell
-tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' -l chi_tra
+tesseract \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
+    -l chi_tra
 ```
 
 ### Result
