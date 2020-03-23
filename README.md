@@ -98,3 +98,7 @@ tesseract \
 
 Comparing with the result using `HanT` script this one is slightly better IMO.
 
+## Reference
+
+* [tesseract-ocr/tessdata_best: Best (most accurate) trained LSTM models.](https://github.com/tesseract-ocr/tessdata_best)
+* [tesseract/tesseract.1.asc at tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract/blob/HEAD/doc/tesseract.1.asc#TESSDATADIR)
