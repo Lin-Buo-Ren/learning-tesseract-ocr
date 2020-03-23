@@ -55,7 +55,7 @@ tesseract \
 
 ### Result
 
-[Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt>), not a typo has been found.
+[Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.tessdata_best.txt>), not a typo has been found.
 
 ## Single full text page OCR (Traditional Chinese with `HanT` script) (tessdata_best)
 
@@ -76,7 +76,7 @@ tesseract \
 
 ### Result
 
-[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
+[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
 ### Result with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814)
 
@@ -88,7 +88,7 @@ tesseract \
     -c preserve_interword_spaces=1
 ```
 
-[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.with_issue2814_workaround.txt>).
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.with_issue2814_workaround.txt>).
 
 ## Single full text page OCR (Traditional Chinese with `chi_tra` language) (tessdata_best)
 
@@ -109,7 +109,7 @@ tesseract \
 
 ### Result
 
-[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
+[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
 Comparing with the result using `HanT` script this one is slightly better IMO.
 
@@ -123,7 +123,7 @@ tesseract \
     -c preserve_interword_spaces=1
 ```
 
-[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.with_issue2814_workaround.txt>).
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.with_issue2814_workaround.txt>).
 
 ## Reference
 
