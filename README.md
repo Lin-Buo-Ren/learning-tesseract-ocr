@@ -47,7 +47,10 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 ### Operation
 
 ```shell
-tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng' -l eng
+tesseract \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' \
+	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng' \
+    -l eng
 ```
 
 ### Result
