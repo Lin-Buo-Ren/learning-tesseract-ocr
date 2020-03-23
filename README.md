@@ -52,7 +52,7 @@ tesseract 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.p
 
 ### Result
 
-[UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt>), quite perfect,  not a typo has been found.
+[Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt>), not a typo has been found.
 
 ## Single full text page OCR (Traditional Chinese with `HanT` script)
 
