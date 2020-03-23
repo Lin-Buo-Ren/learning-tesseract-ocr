@@ -48,8 +48,8 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 
 ```shell
 tesseract \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng' \
     -l eng
 ```
 
@@ -69,7 +69,7 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 
 ```shell
 tesseract \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
     -l HanT
 ```
@@ -82,7 +82,7 @@ tesseract \
 
 ```shell
 tesseract \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
     -l HanT \
     -c preserve_interword_spaces=1
@@ -102,7 +102,7 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 
 ```shell
 tesseract \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
     -l chi_tra
 ```
@@ -117,7 +117,7 @@ Comparing with the result using `HanT` script this one is slightly better IMO.
 
 ```shell
 tesseract \
-	'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
     -l chi_tra \
     -c preserve_interword_spaces=1
