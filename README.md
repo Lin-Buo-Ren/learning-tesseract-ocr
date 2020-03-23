@@ -36,7 +36,7 @@ bbe518f94b9e3852109113507357bfe7e257834d88d2d1ead44178046bcd2181  chi_tra_vert.t
 
 Publically released full-text PDF, it is encrypted but should be decrypted easily.
 
-## Single full text page OCR (English)
+## Single full text page OCR (English) (tessdata_best)
 
 ### Source material
 
@@ -57,7 +57,7 @@ tesseract \
 
 [Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.txt>), not a typo has been found.
 
-## Single full text page OCR (Traditional Chinese with `HanT` script)
+## Single full text page OCR (Traditional Chinese with `HanT` script) (tessdata_best)
 
 ### Source material
 
@@ -90,7 +90,7 @@ tesseract \
 
 [Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.with_issue2814_workaround.txt>).
 
-## Single full text page OCR (Traditional Chinese with `chi_tra` language)
+## Single full text page OCR (Traditional Chinese with `chi_tra` language) (tessdata_best)
 
 ### Source material
 
