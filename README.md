@@ -36,7 +36,7 @@ bbe518f94b9e3852109113507357bfe7e257834d88d2d1ead44178046bcd2181  chi_tra_vert.t
 
 Publically released full-text PDF, it is encrypted but should be decrypted easily.
 
-## Single full text page OCR (English) (tessdata_best)
+## Single full text page OCR (English)
 
 ### Source material
 
@@ -49,15 +49,15 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 ```shell
 tesseract \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng._variant_' \
     -l eng
 ```
 
-### Result
+### Result(`tessdata_best` model)
 
 [Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.tessdata_best.txt>), not a typo has been found.
 
-## Single full text page OCR (Traditional Chinese with `HanT` script) (tessdata_best)
+## Single full text page OCR (Traditional Chinese)
 
 ### Source material
 
@@ -70,58 +70,33 @@ The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypte
 ```shell
 tesseract \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
-    -l HanT
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr._variant_' \
+    -l _lang_or_script_
 ```
 
-### Result
+### Result(`HanT` script; `tessdata_best` model)
 
 [Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
-### Result with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814)
-
-```shell
-tesseract \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT' \
-    -l HanT \
-    -c preserve_interword_spaces=1
-```
-
-[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.with_issue2814_workaround.txt>).
-
-## Single full text page OCR (Traditional Chinese with `chi_tra` language) (tessdata_best)
-
-### Source material
-
-From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is "這本博士論文..." at page 2, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf -png` command.
-
-The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png>).
-
-### Operation
-
-```shell
-tesseract \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
-    -l chi_tra
-```
-
-### Result
+### Result(`chi_tra` script; `tessdata_best` model)
 
 [Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
 Comparing with the result using `HanT` script this one is slightly better IMO.
 
-### Result with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814)
+### Result(`HanT` script; `tessdata_best` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
 ```shell
 tesseract \
     'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png' \
-    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra' \
-    -l chi_tra \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr._variant_' \
+    -l _lang_or_script_ \
     -c preserve_interword_spaces=1
 ```
+
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.with_issue2814_workaround.txt>).
+
+### Result(`chi_tra` script; `tessdata_best` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
 [Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.with_issue2814_workaround.txt>).
 
