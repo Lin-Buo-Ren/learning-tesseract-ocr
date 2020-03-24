@@ -57,6 +57,10 @@ tesseract \
 
 [Quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.tessdata_best.txt>), not a typo has been found.
 
+### Result(`tessdata_fast` model)
+
+[Also quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.tessdata_fast.txt>), the difference between the `tessdata_fast` model is that it recognizes wrong em-dash character.
+
 ## Single full text page OCR (Traditional Chinese)
 
 ### Source material
@@ -78,11 +82,19 @@ tesseract \
 
 [Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
+### Result(`HanT` script; `tessdata_fast` model)
+
+[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.txt>), about 80% characters are correctly recognized, IMO the `tessdata_fast` model produces (very) slightly better result than this variant.
+
 ### Result(`chi_tra` script; `tessdata_best` model)
 
 [Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.txt>), about 80% characters are correctly recognized, however some text is missing and most Han characters are unnecessarily splitted by a single space.
 
 Comparing with the result using `HanT` script this one is slightly better IMO.
+
+### Result(`chi_tra` script; `tessdata_fast` model)
+
+[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_fast.txt>), about 70% characters are correctly recognized, for some reason this testcase doesn't reproduce [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814).
 
 ### Result(`HanT` script; `tessdata_best` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
@@ -94,11 +106,19 @@ tesseract \
     -c preserve_interword_spaces=1
 ```
 
-[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.with_issue2814_workaround.txt>).
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_best.with_issue2814_workaround.txt>) than the one without the workaround.
+
+### Result(`HanT` script; `tessdata_fast` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
+
+[Slightly inferior](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.with_issue2814_workaround.txt) than the `tessdata_best` counterpart.
 
 ### Result(`chi_tra` script; `tessdata_best` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
-[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.with_issue2814_workaround.txt>).
+[Much better](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_best.with_issue2814_workaround.txt>) than the one without the workaround.
+
+### Result(`chi_tra` script; `tessdata_fast` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
+
+[Inferior](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.chi_tra.tessdata_fast.with_issue2814_workaround.txt) than the `tessdata_best` counterpart.  About 60% of correctness.
 
 ## Reference
 
