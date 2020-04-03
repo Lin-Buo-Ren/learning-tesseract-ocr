@@ -84,7 +84,7 @@ tesseract \
 
 ### Result(`HanT` script; `tessdata_fast` model)
 
-[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.txt>), about 80% characters are correctly recognized, IMO the `tessdata_fast` model produces (very) slightly better result than this variant.
+[Suboptimal](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.txt>), about 80% characters are correctly recognized, IMO the `tessdata_best` model produces (very) slightly better result than this variant.
 
 ### Result(`chi_tra` script; `tessdata_best` model)
 
