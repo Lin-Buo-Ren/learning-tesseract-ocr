@@ -110,7 +110,7 @@ tesseract \
 
 ### Result(`HanT` script; `tessdata_fast` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
-[Slightly inferior](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.with_issue2814_workaround.txt) than the `tessdata_best` counterpart.
+[Slightly inferior](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png.ocr.HanT.tessdata_fast.with_issue2814_workaround.txt>) than the `tessdata_best` counterpart.
 
 ### Result(`chi_tra` script; `tessdata_best` model; with workaround for [Tesseract issue #2814](https://github.com/tesseract-ocr/tesseract/issues/2814))
 
