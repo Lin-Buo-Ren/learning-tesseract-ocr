@@ -36,7 +36,7 @@ bbe518f94b9e3852109113507357bfe7e257834d88d2d1ead44178046bcd2181  chi_tra_vert.t
 
 Publically released full-text PDF, it is encrypted but should be decrypted easily.
 
-## Single full text page OCR (English)
+## Single full text page OCR (to plaintext document) (English)
 
 ### Source material
 
@@ -61,7 +61,7 @@ tesseract \
 
 [Also quite perfect](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.tessdata_fast.txt>), the difference between the `tessdata_fast` model is that it recognizes wrong em-dash character.
 
-## Single full text page OCR (Traditional Chinese)
+## Single full text page OCR (to plaintext document) (Traditional Chinese)
 
 ### Source material
 
