@@ -34,15 +34,16 @@ bbe518f94b9e3852109113507357bfe7e257834d88d2d1ead44178046bcd2181  chi_tra_vert.t
 
 ### UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS by 蔡英文(Ing-wen, Tsai)
 
-Publically released full-text PDF, it is encrypted but should be decrypted easily.
+Publically released full-text PDF, it is encrypted but should be decrypted easily.  The following parts are used as the source material:
+
+* ACKNOWLEDGEMENT: Single page(7) extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf -png` command.  The resulting file is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png>).
+* "這本博士論文...": Single page(2) extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf -png` command. The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png>).
 
 ## Single full text page OCR (to plaintext document) (English)
 
 ### Source material
 
-From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is ACKNOWLEDGEMENT at page 7, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf -png` command.
-
-The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png>).
+UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS: ACKNOWLEDGEMENT
 
 ### Operation
 
@@ -65,9 +66,7 @@ tesseract \
 
 ### Source material
 
-From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is "這本博士論文..." at page 2, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf -png` command.
-
-The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_2.pdf.png>).
+UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS: "這本博士論文..."
 
 ### Operation
 
