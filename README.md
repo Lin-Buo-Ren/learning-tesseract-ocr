@@ -117,11 +117,49 @@ tesseract \
 
 ## Single full text page OCR (to PDF document) (English)
 
-### Source material: UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS by Ing-wen, Tsai, ACKNOWLEDGEMENT
+### Source material: UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS: ACKNOWLEDGEMENT
 
-From UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS, the material used is ACKNOWLEDGEMENT at page 7, it is extracted using the PDF Split and Merge Basic Editon software and is converted to PNG image using the `pdftoppm 'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf -png` command.
+#### Operation
 
-The resulting filename is [UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png](<doc-assets/UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png>).
+```shell
+tesseract \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png' \
+    'UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng._variant_' \
+    -l eng \
+    pdf
+```
+
+#### Result(`tessdata_best` model)
+
+[Sub-optimal](<UNFAIR TRADE PRACTICES AND SAFEGUARD ACTIONS.decrypted.subset_7.pdf.png.ocr.eng.testdata_best.pdf>), while no typo has been found the embedded text in the PDF document does not preserve lines but making all words split into multiple lines:
+
+```
+ACKNOWLEDGEMENT
+I
+ am
+ grateful
+ to
+ my
+ superviser,
+ Mr.
+ Michael
+ J.
+ Elliott
+ for
+ his
+guidance,
+ patience
+ and
+ encouragement.
+ I would
+ also
+ like
+ to
+thank
+ the
+```
+
+Seems to be a reader-end issue of determine what character counts as new line, though...
 
 ## Reference
 
